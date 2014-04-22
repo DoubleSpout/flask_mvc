@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 from flask import Flask
+import config
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'random'
-
-__all__ = ["controllers","models"]
+__all__ = ["controllers","models","config"]
 
