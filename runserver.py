@@ -11,7 +11,6 @@ if __env == "Production" :
 else:
     app.config.from_object(config.Debug())
     
-
 if __name__ == '__main__':
     app.run(host=app.config.get("HOST"),port=app.config.get("PORT"))
     
